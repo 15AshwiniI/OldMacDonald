@@ -1,0 +1,31 @@
+/**
+ * Write a description of class Chicken here.
+ * 
+ * @Ashwini Iyer
+ * @11/11/13
+ */
+public class Chicken extends Animal
+{
+    // instance variables - replace the example below with your own
+   
+    /**
+     * constructors for a Chicken
+     */
+    public Chicken()
+    {
+        this("chicken");
+    }
+
+    public Chicken(String chickenType)
+    {
+        super("Gallus Gallus Domesticus", chickenType);
+    }
+
+    public String speak()
+    {
+        noise = "bawk";
+        return noise;
+    }
+ 
+
+}
