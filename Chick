@@ -1,0 +1,27 @@
+/**
+ * Write a description of class Chick here.
+ * 
+ * @Ashwini 
+ * @11/11/13
+ */
+public class Chick extends Chicken
+{
+    // instance variables - replace the example below with your own
+    private int x;
+
+    /**
+     * Constructor for objects of class Chick
+     */
+    public Chick()
+    {
+        // initialise instance variables
+        x = 0;
+    }
+    
+    public String speak()
+    {
+     noise = "peep";
+     return noise;
+    }
+
+}
