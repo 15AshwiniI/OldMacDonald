@@ -1,0 +1,58 @@
+/**
+ * Abstract class Animal - write a description of the class here
+ * 
+ * @Ashwini Iyer
+ * @11/11/13
+ */
+public abstract class Animal implements Comparable
+{
+    // instance variables - replace the example below with your own
+    public  String latinName;
+    public  String commonName;
+    public String noise;
+    
+    /**
+     * constructor for the class Animal
+     */
+    
+    public Animal(String lName, String cName)
+    {
+     setLatinName(lName);
+     setCommonName(cName);    
+    }
+
+    public abstract String speak();
+
+    public String getLatinName()
+    {
+        return latinName;
+    }
+
+    public void setLatinName(String newLatinName)
+    {
+        latinName = newLatinName;
+    }
+
+    public String getCommonName()
+    {
+        return commonName;
+    }
+
+    public void setCommonName(String newCommonName)
+    {
+        commonName = newCommonName;
+    }
+
+    public int compareTo(Object obj)
+    {
+        if (obj instanceof Animal)
+        { return this.getCommonName().compareTo(((Animal)obj).getCommonName());
+        }
+        else
+        {
+            throw new IllegalArgumentException("This is not an Animal!");
+        }
+    }
+}
+
+   
