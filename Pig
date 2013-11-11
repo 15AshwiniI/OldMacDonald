@@ -1,0 +1,30 @@
+/**
+ * Write a description of class Pig here.
+ * 
+ * @Ashwini Iyer
+ * @11/11/13
+ */
+public class Pig extends Animal
+{
+    // instance variables - replace the example below with your own
+    private int x;
+
+    /**
+     * Constructors for objects of class Pig
+     */
+    public Pig()
+    {
+        this("pig");
+    }
+    
+    public Pig(String pigType)
+    {
+        super("pig's latin name ", pigType);
+    }
+    
+    public String speak()
+    {
+        noise = "oink";
+        return noise;
+    }
+}
