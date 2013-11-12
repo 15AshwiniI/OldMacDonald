@@ -10,12 +10,18 @@ public class OldMacDonaldsFarm
     public String farmerName;
     ArrayList<Animal>farmAnimals;
 
+    /**
+     * constructor for the class OldMacDonaldsFarm
+     */
     public OldMacDonaldsFarm()
     {
         farmerName= "Old MacDonald";
         farmAnimals = new ArrayList<Animal>();
     }
 
+    /**
+     * Instructs the object to sing the and build up the verses of the song OldMacDonaldsFarm
+     */
     public void singVerse()
     {
         String phrase1 = farmerName + " had a farm," ; 
@@ -23,10 +29,9 @@ public class OldMacDonaldsFarm
         int len = farmAnimals.size();
 
         Animal anim = farmAnimals.get(len-1);
-        System.out.println(phrase1+ei+
-            "and on his farm he had some " + anim.getCommonName() + "s," + ei);
+        System.out.println(phrase1+ei+"and on his farm he had some " + anim.getCommonName() + "s," + ei);
         for(int i=len-1;i>=0;i--)
-        {
+        {  
             Animal anim2 = farmAnimals.get(i);
             System.out.println("With a "+anim2.speak()+"-"+anim2.speak()+ " here, and a "+anim2.speak()+"-"+anim2.speak()+ " there,");
             System.out.println("Here a "+anim2.speak()+", there a "+anim2.speak()+", everywhere a "+anim2.speak()+"-"+anim2.speak()+",");
@@ -40,6 +45,10 @@ public class OldMacDonaldsFarm
         singer.farmAnimals.add(new Chicken( ));
         singer.singVerse( );
         singer.farmAnimals.add(new Chick());
-        singer.singVerse( ); singer.farmAnimals.add(new Rooster( )); singer.singVerse( ); singer.farmAnimals.add(new Pig( )); singer.singVerse( );
+        singer.singVerse( );
+        singer.farmAnimals.add(new Rooster()); 
+        singer.singVerse( ); 
+        singer.farmAnimals.add(new Pig( )); 
+        singer.singVerse( );
     }
 }
