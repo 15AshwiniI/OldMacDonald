@@ -2,8 +2,8 @@ import java.util.ArrayList;
 /**
  * Sings the song called Old Mac Donald Had a Farm.
  * 
- * @Ashwini Iyer 
- * @11/11/13
+ * @author Ashwini Iyer 
+ * @version 11/11/13
  */
 public class OldMacDonaldsFarm
 {
@@ -13,13 +13,25 @@ public class OldMacDonaldsFarm
     public OldMacDonaldsFarm()
     {
         farmerName= "Old MacDonald";
-        ArrayList<Animal>farmAnimals = new ArrayList<Animal>();
+        farmAnimals = new ArrayList<Animal>();
     }
 
     public void singVerse()
     {
         String phrase1 = farmerName + " had a farm," ; 
         String ei = " E-I-E-I-O.";
+        int len = farmAnimals.size();
+
+        Animal anim = farmAnimals.get(len-1);
+        System.out.println(phrase1+ei+
+            "and on his farm he had some " + anim.getCommonName() + "s," + ei);
+        for(int i=len-1;i>=0;i--)
+        {
+            Animal anim2 = farmAnimals.get(i);
+            System.out.println("With a "+anim2.speak()+"-"+anim2.speak()+ " here, and a "+anim2.speak()+"-"+anim2.speak()+ " there,");
+            System.out.println("Here a "+anim2.speak()+", there a "+anim2.speak()+", everywhere a "+anim2.speak()+"-"+anim2.speak()+",");
+        }
+        System.out.println(phrase1 + ei + "\n\n");
 
     }
 
