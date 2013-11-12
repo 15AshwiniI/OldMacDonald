@@ -1,13 +1,12 @@
+
 /**
- * Write a description of class Pig here.
+ * A pig is an animal on OldMacDonald's farm
  * 
- * @Ashwini Iyer
- * @11/11/13
+ * @author Ashwini Iyer
+ * @version 11/11/13
  */
 public class Pig extends Animal
 {
-    // instance variables - replace the example below with your own
-    private int x;
 
     /**
      * Constructors for objects of class Pig
@@ -21,6 +20,10 @@ public class Pig extends Animal
     {
         super("pig's latin name ", pigType);
     }
+    
+    /**
+     * Tells the pig what noise it makes 
+     */
     
     public String speak()
     {
