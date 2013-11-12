@@ -1,8 +1,9 @@
+
 /**
- * Write a description of class Chicken here.
+ * A Chicken is an animal on OldMacDonaldsFarm
  * 
- * @Ashwini Iyer
- * @11/11/13
+ * @author Ashwini Iyer
+ * @version 11/11/13
  */
 public class Chicken extends Animal
 {
@@ -21,6 +22,9 @@ public class Chicken extends Animal
         super("Gallus Gallus Domesticus", chickenType);
     }
 
+    /**
+     * tells the chicken what noise to make
+     */
     public String speak()
     {
         noise = "bawk";
