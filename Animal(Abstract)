@@ -1,8 +1,10 @@
+
 /**
- * Abstract class Animal - write a description of the class here
+ * the basic information regarding the similar traits shared by all the animals 
+ * on OldMacDonaldsFarm
  * 
- * @Ashwini Iyer
- * @11/11/13
+ * @author Ashwini Iyer
+ * @version 11/11/13
  */
 public abstract class Animal implements Comparable
 {
@@ -21,28 +23,56 @@ public abstract class Animal implements Comparable
      setCommonName(cName);    
     }
 
+    /**
+     * determines the noise made by the animals
+     */
     public abstract String speak();
 
+    
+    /**
+     * returns the latin name of the animal
+     * 
+     * @return latinName which is the latin name of the animal
+     */
     public String getLatinName()
     {
         return latinName;
     }
 
+    /**
+     * changes the latin name
+     * 
+     * @param newLatin name which is the new name of the animal 
+     */
     public void setLatinName(String newLatinName)
     {
         latinName = newLatinName;
     }
 
+    /**
+     * gets the value of the common name of the animal
+     * 
+     * @return commonName which is the common name of the animal
+     */
     public String getCommonName()
     {
         return commonName;
     }
 
+    /**
+     * changes the common name to a new name
+     * 
+     * @param newCommonName which is the new common name
+     */
     public void setCommonName(String newCommonName)
     {
         commonName = newCommonName;
     }
 
+    /**
+     * checks to see if the object is an Animal type
+     * if not throws an IllegalArgumentException
+     */
     public int compareTo(Object obj)
     {
         if (obj instanceof Animal)
