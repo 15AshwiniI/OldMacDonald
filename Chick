@@ -1,27 +1,27 @@
+
 /**
- * Write a description of class Chick here.
+ * A chick is a small, younger chicken that lives on OldMacDonaldsFarm
  * 
- * @Ashwini 
- * @11/11/13
+ * @author Ashwini 
+ * @version 11/11/13
  */
 public class Chick extends Chicken
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
     /**
      * Constructor for objects of class Chick
      */
     public Chick()
     {
-        // initialise instance variables
-        x = 0;
+        super("chick");
     }
-    
+
+    /**
+     * tells chick what noise to make 
+     */
     public String speak()
     {
-     noise = "peep";
-     return noise;
+        noise = "peep";
+        return noise;
     }
 
 }
