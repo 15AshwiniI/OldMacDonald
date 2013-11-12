@@ -1,21 +1,23 @@
+
 /**
- * Write a description of class Rooster here.
+ * A type of chicken that lives on OldMacDonaldsFarm
  * 
- * @Ashwini Iyer
- * @11/11/13
+ * @author Ashwini Iyer
+ * @version 11/11/13
  */
 public class Rooster extends Chicken
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
     /**
      * Constructor for objects of class Rooster
      */
     public Rooster()
     {
-
+      super("rooster");
     }
+    
+    /**
+     * tells rooster what noise to make 
+     */
 
     public String speak()
     {
